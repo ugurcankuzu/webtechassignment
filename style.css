@@ -1,0 +1,196 @@
+body {
+  background: linear-gradient(
+    180deg,
+    rgba(227, 255, 248, 0) 82.08%,
+    rgba(227, 255, 248, 0.38) 100%
+  );
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 2% 10%;
+  margin: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+header {
+  display: flex;
+}
+/* Header Section Styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+.brandContainer,
+.navContainer {
+  width: 100%;
+  display: flex;
+}
+
+.brand a {
+  text-decoration: none;
+  color: #89c5cc;
+  font-family: "Inter", sans-serif;
+  line-height: 26px;
+  font-size: 22px;
+  font-weight: 700;
+}
+.nav a {
+  text-decoration: none;
+  font-family: "Mulish", sans-serif;
+  line-height: 23px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #1f1534;
+}
+.navContainer {
+  justify-content: end;
+  align-items: center;
+}
+
+/*================================================================*/
+/** Main Section Styles*/
+main {
+  flex: 1;
+  display: flex;
+}
+.mainContentWrapper,
+.mainImage {
+  width: 100%;
+}
+.mainContentWrapper {
+  display: flex;
+  align-items: center;
+}
+.primaryContent {
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 72px;
+  color: #000;
+  text-transform: uppercase;
+  margin: 0;
+}
+.primaryContent span {
+  font-weight: 700;
+  color: #89c5cc;
+}
+.subContent {
+  font-family: "Open Sans", sans-serif;
+  line-height: 26px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #7d7987;
+  margin-bottom: 48px;
+}
+.subContent span {
+  font-weight: 700;
+}
+.ctaButton {
+  background-color: #69b99d;
+  border: 0;
+  border-radius: 4px;
+  padding: 14px 32px 15px 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+}
+.ctaButton:hover {
+  cursor: pointer;
+}
+/* =================================================================*/
+/* Footer Section Styles */
+footer {
+  display: flex;
+  justify-content: center;
+}
+footer p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+footer p span {
+  font-weight: 700;
+}
+/*----------------------------------------------------------------*/
+/*Dot Pattern */
+.pattern {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100px;
+}
+/*----------------------------------------------------------------*/
+/*PopUp Styles */
+.popupWrapper {
+  width: 100vw;
+  height: 100vh;
+  border: 1px solid black;
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  backdrop-filter: blur(15px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+.popupContent {
+  background: linear-gradient(
+    180deg,
+    rgba(227, 255, 248, 0) 82.08%,
+    rgba(227, 255, 248, 0.38) 100%
+  );
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  box-sizing: border-box;
+  gap: 10px;
+}
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+input,
+textarea {
+  font-family: "Open Sans", sans-serif;
+  border-radius: 4px;
+  border: 1px solid black;
+  padding: 5px;
+}
+input::placeholder,
+textarea::placeholder {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+textarea {
+  resize: none;
+}
+.popupLabel {
+  font-family: "Open Sans", sans-serif;
+}
+#popupButton {
+  background-color: #69b99d;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  border: none;
+  border-radius: 4px;
+  padding: 8px;
+}
+#popupButton:hover{
+    cursor: pointer;
+}

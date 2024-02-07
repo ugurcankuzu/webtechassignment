@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Mulish:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--HEADER-->
+    <header>
+      <div class="brandContainer">
+        <h1 class="brand"><a href="#">traine.me</a></h1>
+      </div>
+      <div class="navContainer">
+        <nav class="nav">
+          <a href="" style="font-weight: 700">Home</a><a href="">About</a
+          ><a href="">Training</a>
+        </nav>
+      </div>
+    </header>
+    <!--HEADER END-->
+    <!--MAIN-->
+    <main>
+      <div class="mainContentWrapper">
+        <div class="content">
+          <p class="primaryContent">
+            workouts made <span>exclusive</span> for you!
+          </p>
+          <p class="subContent">
+            We create <span>exclusive and unique workouts</span> for you.<br />
+            Invest in your body and <span>get much more performance</span> and
+            quality of life.
+          </p>
+          <button id="ctaButton" class="ctaButton">
+            <span><img src="./assets/wpicon.svg" alt="" /></span>
+            Start now
+          </button>
+        </div>
+      </div>
+
+      <img class="mainImage" src="./assets/mainasset.svg" alt="" />
+    </main>
+    <!--MAIN END-->
+    <!--FOOTER-->
+    <footer>
+      <p>send us a message <span>@traine.me</span></p>
+    </footer>
+    <!--FOOTER END-->
+    <!--Dot Pattern-->
+    <img class="pattern" src="./assets/ballpattern.svg" alt="" />
+    <!--Dot Pattern End-->
+    <!--Popup-->
+    <div class="popupWrapper" id="popupWrapper">
+      <div class="popupContent" id="popupContent">
+        <div class="inputWrapper">
+          <label class="popupLabel" for="mail">E-mail:</label>
+          <input type="email" id="mail" name="mail" placeholder="xyz@xyz.com" />
+        </div>
+        <div class="inputWrapper">
+          <label class="popupLabel" for="message">Message:</label>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="enter your message here..."
+          ></textarea>
+        </div>
+        <button id="popupButton">Send</button>
+      </div>
+    </div>
+    <!--Popup END-->
+    <script src="./script.js"></script>
+  </body>
+</html>
